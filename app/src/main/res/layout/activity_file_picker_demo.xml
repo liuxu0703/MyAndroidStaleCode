@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#696969"
+    android:padding="10dp"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/afpd_btn_start_dlg3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:text="scan with MediaScannerUtils" />
+
+    <Button
+        android:id="@+id/afpd_btn_start_dlg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:text="find all files in sd root" />
+
+    <Button
+        android:id="@+id/afpd_btn_start_dlg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:textColor="#fff"
+        android:text="find jpg files in DCIM" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:background="#fff" />
+
+    <Button
+        android:id="@+id/afpd_btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:textColor="#fff"
+        android:text="Back to Parent Folder" />
+
+    <TextView
+        android:id="@+id/afpd_tv_cur_dir"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center_vertical"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/afpd_tv_selected_file"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center_vertical"
+        android:background="#fff" />
+    
+    <com.lx.mystalecode.view.FilePicker.FilePickerList
+        android:id="@+id/afpd_filepicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff" />
+
+</LinearLayout>
